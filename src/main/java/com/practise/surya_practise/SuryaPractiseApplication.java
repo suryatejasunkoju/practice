@@ -1,7 +1,7 @@
 package com.practise.surya_practise;
 
 
-import com.practise.surya_practise.DSA.StriversSdeSheet.DsaClient;
+import com.practise.surya_practise.LLD.design_patterns.DesignPatternsClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,7 +13,7 @@ public class SuryaPractiseApplication
 	{
 		SpringApplication.run(SuryaPractiseApplication.class, args);
 //		SolidPrinciplesClient.run();
-//		DesignPatternsClient.run();
-		DsaClient.run();
+		DesignPatternsClient.run();
+//		DsaClient.run();
 	}
 }

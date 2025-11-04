@@ -1,20 +1,20 @@
 package com.practise.surya_practise.LLD.design_patterns;
 
 
-import com.practise.surya_practise.LLD.design_patterns._2strategy.fix.StrategyFix;
-import com.practise.surya_practise.LLD.design_patterns._2strategy.issue.StrategyIssue;
-import com.practise.surya_practise.LLD.design_patterns._3observer.amazon.Amazon;
-import com.practise.surya_practise.LLD.design_patterns._3observer.weather_station.UnlikeHeadFirstDesignPatterns.ObserverUnlikeHeadFirstDesignPatterns;
-import com.practise.surya_practise.LLD.design_patterns._4decorator.coffe_shop1.CoffeeShop1;
-import com.practise.surya_practise.LLD.design_patterns._4decorator.coffe_shop2.CoffeeShop2;
-import com.practise.surya_practise.LLD.design_patterns._4decorator.pizza_shop.PizzaShop;
-import com.practise.surya_practise.LLD.design_patterns._5factory.abstract_factory.AbstractFactory;
-import com.practise.surya_practise.LLD.design_patterns._5factory.simple_factory.FactoryClient;
-import com.practise.surya_practise.LLD.design_patterns.adapter.AdapterClient;
-import com.practise.surya_practise.LLD.design_patterns.builder.BuilderClient;
-import com.practise.surya_practise.LLD.design_patterns.chain_of_responsibility.ChainOfResponsibilityClient;
-import com.practise.surya_practise.LLD.design_patterns.null_object.VehicleClient;
-import com.practise.surya_practise.LLD.design_patterns.proxy.ProxyClient;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._2strategy.fix.StrategyFix;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._2strategy.issue.StrategyIssue;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.amazon.Amazon;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatterns.ObserverUnlikeHeadFirstDesignPatterns;
+import com.practise.surya_practise.LLD.design_patterns.behavioural.null_object.VehicleClient;
+import com.practise.surya_practise.LLD.design_patterns.creational._5factory.abstract_factory.AbstractFactory;
+import com.practise.surya_practise.LLD.design_patterns.creational._5factory.simple_factory.FactoryClient;
+import com.practise.surya_practise.LLD.design_patterns.structural._4decorator.coffe_shop1.CoffeeShop1;
+import com.practise.surya_practise.LLD.design_patterns.structural._4decorator.coffe_shop2.CoffeeShop2;
+import com.practise.surya_practise.LLD.design_patterns.structural._4decorator.pizza_shop.PizzaShop;
+import com.practise.surya_practise.LLD.design_patterns.structural.adapter.AdapterClient;
+import com.practise.surya_practise.LLD.design_patterns.creational.builder.BuilderClient;
+import com.practise.surya_practise.LLD.design_patterns.behavioural.chain_of_responsibility.ChainOfResponsibilityClient;
+import com.practise.surya_practise.LLD.design_patterns.structural.ProxyClient;
 
 public class DesignPatternsClient
 {

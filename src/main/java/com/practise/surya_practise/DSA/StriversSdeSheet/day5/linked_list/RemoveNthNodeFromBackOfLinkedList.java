@@ -15,10 +15,35 @@ public class RemoveNthNodeFromBackOfLinkedList implements DsaSolutionInterface
         ListNode head = LinkedListUtils.formLinkedList(new int[]{1,2,3,4,5,6,7,8,9,10});
         LinkedListUtils.printLinkedList(head);
         ListNode tmpHead=head, nodeBeforeDeletion=head;
-        int n = 2, i=0;
-
+        int n = 2, i=1, size=0;
+        if(n!=0)
+        {
+            while(tmpHead!=null)
+            {
+                size++;
+                tmpHead=tmpHead.next;
+            }
+            int deletingNodeBeforeIdx=size-n;
+            log.info("size={}, deletingNodeBeforeIdx={}", size, deletingNodeBeforeIdx);
+            while(nodeBeforeDeletion!=null && i++<deletingNodeBeforeIdx)
+            {
+                nodeBeforeDeletion=nodeBeforeDeletion.next;
+            }
+            log.info("bruteForce::nodeBeforeDeletion={}, head={}, tmpHead={}", nodeBeforeDeletion, head, tmpHead);
+            if(deletingNodeBeforeIdx==0)
+            {
+                //i.e, we have to delete first node
+                head=head.next;
+            }
+            else
+            {
+                //we have to delete a node which is not first one
+                nodeBeforeDeletion.next=nodeBeforeDeletion.next.next;
+            }
+        }
         LinkedListUtils.printLinkedList(head);
-        return null;
+        //time=O(n)+O(n)[at max deleting node can be at last of list]
+        return Pair.of("O(2n)", "O(1)");
     }
 
     @Override
@@ -53,7 +78,7 @@ public class RemoveNthNodeFromBackOfLinkedList implements DsaSolutionInterface
             }
         }
         LinkedListUtils.printLinkedList(head);
-        return null;
+        return Pair.of("O(n)", "O(1)");
     }
 
     @Override

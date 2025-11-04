@@ -1,14 +1,8 @@
 package com.practise.surya_practise.DSA.StriversSdeSheet;
 
 
-import com.practise.surya_practise.DSA.StriversSdeSheet.day1.arrays.*;
-import com.practise.surya_practise.DSA.StriversSdeSheet.day1.arrays.PascalsTriangle.*;
-import com.practise.surya_practise.DSA.StriversSdeSheet.day1.arrays.related.*;
-import com.practise.surya_practise.DSA.StriversSdeSheet.day2.arrays_part_2.*;
-import com.practise.surya_practise.DSA.StriversSdeSheet.day3.arrays_part_3.*;
 import com.practise.surya_practise.DSA.StriversSdeSheet.day4.arrays_part_4.*;
 import com.practise.surya_practise.DSA.StriversSdeSheet.day5.linked_list.*;
-import com.practise.surya_practise.DSA.miscellaneous.*;
 
 public class DsaClient
 {
@@ -62,10 +56,10 @@ public class DsaClient
     {
 //        new DeleteAGivenNodeWhenANodeIsGiven().bruteForce();
 
-        new FindTheMiddleOfLinkedList().bruteForce();
-        new RemoveNthNodeFromBackOfLinkedList().goodApproach();
-        new MergeTwoSortedLinkedList().bruteForce();
-        new ReverseALinkedList().bruteForce();
+//        new FindTheMiddleOfLinkedList().bruteForce();
+//        new RemoveNthNodeFromBackOfLinkedList().bruteForce();
+//        new MergeTwoSortedLinkedList().goodApproach();
+        new ReverseALinkedList().betterApproach();
     }
     private static void day6(){
 

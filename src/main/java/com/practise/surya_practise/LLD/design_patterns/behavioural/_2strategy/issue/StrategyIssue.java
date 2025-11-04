@@ -1,0 +1,17 @@
+package com.practise.surya_practise.LLD.design_patterns.behavioural._2strategy.issue;
+
+
+
+public class StrategyIssue
+{
+    public static void run()
+    {
+        System.out.println("StrategyIssue run:");
+        Vehicle sportyVehicle = new SportyVehicle();
+        sportyVehicle.drive();
+        Vehicle passengerVehicle = new PassengerVehicle();
+        passengerVehicle.drive();
+        Vehicle offRoadVehicle = new OffRoadVehicle();
+        offRoadVehicle.drive();
+    }
+}
