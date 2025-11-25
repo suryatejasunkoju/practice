@@ -1,6 +1,6 @@
-package com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatterns.observables;
+package com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatternsBook.observables;
 
-import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatterns.observers.DisplayObserver;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatternsBook.observers.DisplayObserver;
 
 import java.util.ArrayList;
 import java.util.List;

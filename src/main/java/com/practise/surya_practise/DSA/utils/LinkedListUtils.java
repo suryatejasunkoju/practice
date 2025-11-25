@@ -7,7 +7,7 @@ public class LinkedListUtils
 {
     public static void printLinkedList(ListNode head)
     {
-        StringBuilder sb=new StringBuilder();
+        StringBuilder sb=new StringBuilder("");
         while(head!=null)
         {
             sb.append("->");

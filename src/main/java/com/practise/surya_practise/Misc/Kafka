@@ -1,9 +1,10 @@
+https://www.youtube.com/watch?v=c7LPlWvxZcQ
 
+https://www.geeksforgeeks.org/apache-kafka/kafka-interview-questions/
 1. What is Apache Kafka?
-Apache Kafka is a distributed streaming platform that allows for publishing, subscribing to, storing, and processing streams of records in real-time. It's designed to handle high-throughput, fault-tolerant, and scalable data pipelines. Kafka is often used for building real-time data pipelines and streaming applications.
+Apache Kafka is a distributed streaming platform for publishing, subscribing, storing, and processing streams of records in real-time. It's designed to handle high-throughput, fault-tolerant, and scalable data pipelines. Kafka is often used for building real-time data pipelines and streaming applications.
 
 2. What are the key components of Kafka?
-The key components of Kafka include:
 Producer: Publishes messages to Kafka topics.
 Consumer: Subscribes to topics and processes the published messages.
 Broker: A Kafka server that stores and manages topics.
@@ -13,13 +14,14 @@ Partition: Topics are divided into partitions for scalability.
 
 
 3. What is a topic in Kafka?
-A topic in Kafka is a category or feed name to which records are published. Topics in Kafka are always multi-subscriber; that is, a topic can have zero, one, or many consumers that subscribe to the data written to it. Topics are split into partitions for improved scalability and parallel processing.
+A topic in Kafka is a feed name to which records are published. Topics are multi-subscriber; that is, a topic can have zero, one, or many consumers that subscribe to the data written to it. Topics are split into partitions for improved scalability and parallel processing.
 
 4. What is a partition in Kafka?
+
 A partition is an ordered, immutable sequence of records that is continually appended to. Each partition is a structured commit log, and records in the partitions are each assigned a sequential id number called the offset. Partitions allow Kafka to scale horizontally and provide parallel processing capabilities.
 
 5. What is the role of ZooKeeper in Kafka?
-ZooKeeper is used for managing and coordinating Kafka brokers. It serves as a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. ZooKeeper keeps track of the status of Kafka cluster nodes, Kafka topics, and partitions.
+ZooKeeper is used for managing and coordinating Kafka brokers. It serves as a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.  ZooKeeper keeps track of the status of Kafka cluster nodes, Kafka topics, and partitions.
 
 6. What is a broker in Kafka?
 A broker is a Kafka server that runs in a Kafka cluster. It receives messages from producers, assigns offsets to them, and commits the messages to storage on disk. It also services consumers, responding to fetch requests for partitions and responding with the messages that have been published.
@@ -148,12 +150,6 @@ LogAppendTime: The time the broker received the message. These timestamps can be
 41. What is the purpose of the Kafka Quota API?
 The Kafka Quota API allows you to enforce quotas on produce and fetch requests to prevent a single client from consuming too many broker resources. Quotas can be defined on a per-client or per-user basis, and can limit the rate of data production or consumption. This helps in ensuring fair resource allocation and preventing denial of service scenarios.
 
-42. How does Kafka handle message acknowledgments?
-Kafka producers can be configured to require acknowledgments when sending messages. There are three settings:
-acks=0: No acknowledgment (fire and forget)
-acks=1: Leader acknowledgment only
-acks=all: Full ISR (In-Sync Replica) acknowledgment The choice affects the trade-off between latency and durability. Higher levels of acknowledgment provide stronger durability guarantees but increase latency.
-
 43. How does Kafka handle message acknowledgments?
 Kafka producers can be configured to require acknowledgments when sending messages. There are three settings:
 acks=0: No acknowledgment (fire and forget)
@@ -175,7 +171,6 @@ Kafka itself treats message data as opaque byte arrays and doesn't perform any s
 The Kafka Schema Registry provides a serving layer for metadata. It provides a RESTful interface for storing and retrieving Avro schemas. It's used in conjunction with Kafka to ensure that producers and consumers use compatible schemas. This is particularly useful in evolving data models over time while maintaining backward and forward compatibility.
 
 46. How does Kafka handle topic deletion?
-When a topic is deleted in Kafka, the following steps occur:
 The topic is marked for deletion in ZooKeeper
 Kafka stops serving data for that topic
 The actual log segments on disk are asynchronously deleted This process ensures that topic deletion doesn't impact the performance of other operations. However, it's worth noting that in versions prior to Kafka 2.1, topic deletion could sometimes be incomplete if brokers were offline during the deletion process.
@@ -262,12 +257,6 @@ Publish-Subscribe: All messages are processed by all consumers. This is achieved
 
 67. What is the purpose of the Kafka producer's linger.ms parameter?
 The linger.ms parameter in a Kafka producer controls the amount of time to wait for additional messages before sending a batch of messages. Increasing this value leads to larger batches and higher throughput at the cost of increased latency. Setting this to 0 (the default) means messages are sent as soon as possible. This parameter allows for fine-tuning the trade-off between latency and throughput in message production.
-
-68. How does Kafka handle message delivery guarantees?
-Kafka provides different levels of delivery guarantees:
-At most once: Messages may be lost but are never redelivered.
-At least once: Messages are never lost but may be redelivered.
-Exactly once: Each message is delivered once and only once. These guarantees are achieved through a combination of producer acknowledgments, consumer offset management, and (for exactly once semantics) the transactions API. The choice depends on the specific requirements of the use case.
 
 69. What is the role of the Kafka consumer's auto.offset.reset configuration?
 The auto.offset.reset configuration in Kafka consumers determines what to do when there is no initial offset in Kafka or if the current offset no longer exists on the server. It can be set to:

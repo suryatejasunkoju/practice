@@ -1,9 +1,10 @@
-package com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.LikeHeadFirstDesignPatterns.observables;
+package com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.LikeHeadFirstDesignPatternsBook.observables;
 
-import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.LikeHeadFirstDesignPatterns.observers.DisplayObserver;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.LikeHeadFirstDesignPatternsBook.observers.DisplayObserver;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class WeatherStation implements WeatherObservable {
     float temperature=0;
@@ -48,4 +49,5 @@ public class WeatherStation implements WeatherObservable {
     public float getTemperature() {
         return this.temperature;
     }
+
 }

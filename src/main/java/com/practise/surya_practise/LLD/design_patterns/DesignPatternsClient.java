@@ -4,7 +4,8 @@ package com.practise.surya_practise.LLD.design_patterns;
 import com.practise.surya_practise.LLD.design_patterns.behavioural._2strategy.fix.StrategyFix;
 import com.practise.surya_practise.LLD.design_patterns.behavioural._2strategy.issue.StrategyIssue;
 import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.amazon.Amazon;
-import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatterns.ObserverUnlikeHeadFirstDesignPatterns;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.LikeHeadFirstDesignPatternsBook.ObserverLikeHeadFirstDesignPatterns;
+import com.practise.surya_practise.LLD.design_patterns.behavioural._3observer.weather_station.UnlikeHeadFirstDesignPatternsBook.ObserverUnlikeHeadFirstDesignPatterns;
 import com.practise.surya_practise.LLD.design_patterns.behavioural.null_object.VehicleClient;
 import com.practise.surya_practise.LLD.design_patterns.creational._5factory.abstract_factory.AbstractFactory;
 import com.practise.surya_practise.LLD.design_patterns.creational._5factory.simple_factory.FactoryClient;
@@ -101,35 +102,37 @@ public class DesignPatternsClient
 	public static void run() {
 		//		Design Patterns:
 //		Strategy Design pattern:
-		StrategyIssue.run();
-		StrategyFix.run();
+//		StrategyIssue.run();
+//		StrategyFix.run();
+//
+////		Observer Design Pattern:
+//		ObserverUnlikeHeadFirstDesignPatterns.run();
+//		Amazon.run();
+//
+////		Decorator pattern
+//		CoffeeShop1.run();
+//		CoffeeShop2.run();
+//		PizzaShop.run();
+//
+////		Factory pattern
+//		FactoryClient.run();
+//		AbstractFactory.run();
+//
+////		Adapter pattern:
+//		AdapterClient.run();
+//
+////		Null Object pattern:
+//		VehicleClient.run();
+//
+////		ChainOfResponsibility pattern:
+//		ChainOfResponsibilityClient.run();
+////		Proxy pattern:
+//		ProxyClient.run();
+//
+////		Builder pattern:
+//		BuilderClient.run();
 
-//		Observer Design Pattern:
-		ObserverUnlikeHeadFirstDesignPatterns.run();
-		Amazon.run();
 
-//		Decorator pattern
-		CoffeeShop1.run();
-		CoffeeShop2.run();
-		PizzaShop.run();
-
-//		Factory pattern
-		FactoryClient.run();
-		AbstractFactory.run();
-
-//		Adapter pattern:
-		AdapterClient.run();
-
-//		Null Object pattern:
-		VehicleClient.run();
-
-//		ChainOfResponsibility pattern:
-		ChainOfResponsibilityClient.run();
-//		Proxy pattern:
-		ProxyClient.run();
-
-//		Builder pattern:
-		BuilderClient.run();
-
+		ObserverLikeHeadFirstDesignPatterns.run();
 	}
 }

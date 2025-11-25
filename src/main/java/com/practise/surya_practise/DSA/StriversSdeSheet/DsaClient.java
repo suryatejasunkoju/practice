@@ -1,8 +1,10 @@
 package com.practise.surya_practise.DSA.StriversSdeSheet;
 
 
+import com.practise.surya_practise.DSA.StriversSdeSheet.day14.LargestRectangleInAHistogram;
 import com.practise.surya_practise.DSA.StriversSdeSheet.day4.arrays_part_4.*;
 import com.practise.surya_practise.DSA.StriversSdeSheet.day5.linked_list.*;
+import com.practise.surya_practise.DSA.StriversSdeSheet.day6.ReverseALinkedListInGroupsOfSizeK;
 
 public class DsaClient
 {
@@ -13,7 +15,9 @@ public class DsaClient
 //        day2();
 //        day3();
 //        day4();
-        day5();
+//        day5();
+//        day6();
+        day14();
     }
     private static void miscellaneous()
     {
@@ -62,9 +66,14 @@ public class DsaClient
         new ReverseALinkedList().betterApproach();
     }
     private static void day6(){
-
+        new ReverseALinkedListInGroupsOfSizeK().goodApproach();
     }
     private static void day7(){
 
+    }
+
+    private static void day14()
+    {
+        new LargestRectangleInAHistogram().bruteForce();
     }
 }

@@ -143,6 +143,13 @@ public class ArrayUtils
         arr[j]=tmp;
     }
 
+    public static <V> void swap(List<V> arr, int i, int j)
+    {
+        V tmp=arr.get(i);
+        arr.set(i, arr.get(j));
+        arr.set(j, tmp);
+    }
+
     public static void printList(List<int[]> result)
     {
         log.info("[");
