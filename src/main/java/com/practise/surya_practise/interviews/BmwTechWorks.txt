@@ -1,0 +1,49 @@
+Give your Introduction:
+Never explain about education in Intro. Explain about companies that I worked in and technologies that I used.
+Explain main features that I worked on in the company
+
+What is thread per request model in Spring boot
+What is MVC model in Spring Boot
+What's the difference between synchronised & ReentrantLock
+
+What's the output of below code snippet:
+List<String> list=List.of("order", "customer", "order", "user", "customer");
+Map<String, Integer> map=list.map(
+	s->Collections.groupingBy(s)
+).toMap();
+System.out.println(map.get("order")+map.get("customer"));
+
+
+
+What's the output of below code snippet:
+public class MyAutoCloseable extends AutoCloseable{
+	public MyAutoCloseable(String s){
+		System.out.print("C1");
+	}
+	@Override
+	public close()
+{
+		throw new RuntimeExeption("E2");
+	}
+}
+
+try(MyAutoCloseable obj=new MyAutoCloseable())
+{
+	throw new RuntimeException("C3")
+}
+catch(){
+	System.out.print("E1");
+}
+
+DSA:
+2 sum problem
+brute force & optimal approach
+
+
+SQL:
+What are the types of JOINS in SQL
+What is CTE
+
+
+Explain SOLID principles
+What are the difficulties that u faced while splitting monolithic to microservices architecture

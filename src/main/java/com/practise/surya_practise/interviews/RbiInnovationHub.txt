@@ -1,0 +1,20 @@
+Spring boot, java, design patterns
+Actuators
+@SpringBootApplication
+@lazy
+Design Patterns
+LISKOV substitution principle
+What happens when same API is hit 2 times
+
+@Transactional uses proxy design pattern internally
+Strangular pattern
+
+
+inheritance
+Animal obj=new dog();
+obj.method();—which method is called, Child/parent’s
+
+
+DSA
+2nd largest element
+Given an array, first positive missing number. Numbers in arr will be consecutive and one will be missing.

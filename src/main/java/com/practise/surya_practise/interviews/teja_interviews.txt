@@ -1,0 +1,46 @@
+
+Oops Concepts:
+Encapsulation
+Abstraction
+Inheritance,,, all with examples
+Why java wont allow multiple inheritance, diamond inheritance.
+String pool
+== & equals diff
+
+
+Hash map internal implementation with load factor
+
+MultiThreading-ThreadPool, ExecutorService
+
+
+System Design:
+Famous Design patterns:
+Same Shreyansh videos
+
+
+Spring boot:
+annotations:-
+Component
+ComponentScan
+Autowired
+Transactional
+RequestBody
+ResponseBody
+
+RestTemplate
+Controller & RestController diff
+
+Miscellenous:
+tools to identify slow APIs-newrelic
+How we will identify when an instance goes down-load balancer[spring boot annotation]
+API Gateway
+
+
+Spring Security[asked in companies which need security]:
+Jwt
+oauth
+
+
+
+Last stopped at : 3:10
+

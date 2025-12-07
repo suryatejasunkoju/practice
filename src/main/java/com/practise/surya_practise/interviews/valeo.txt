@@ -1,0 +1,125 @@
+DSA:-
+How to detect a cycle in a linked list.
+And from which point that cycle starts
+
+
+Problem statement :
+
+Meal subscription service:-
+Subscription for 1 month, 3 months, 6 months – 1500, 4000, 6000
+One time – 60 rs
+Website..
+Different meals
+Different pricing
+Discounts
+Buy subscription or one time
+
+post
+/api/user/register
+{
+    //user details
+}
+/api/subscribe/user_id   --making user to order.//register user for subscription.
+{
+    user_id:
+    meal_type;
+    subscriptionType:3
+}
+
+get
+/api/user/user_id          -- getting user details
+/api/meals/type_of_meal     -- getting meal details
+/api/discount/meal_id       -- getting discount details
+/api/discount/discount_id    -- getting discount details
+/api/subscribe/get_order_details/order_id       -- getting order details
+/api/subscribe/get_one_time_order_details/one_time_order_id       -- getting one-time-order details
+
+
+
+user  ->  subscription onetomany mapping of entities.
+
+@Entity
+class User{
+    @OneToMany
+    List<Subscription> subcriptionList;
+
+    @OneToMany
+    List<Order> orderList;
+}
+
+@Entity
+class Meal{
+    @Id
+    String type;
+    String flavour;
+    int price;
+    @OneToOne
+    Discount discount;
+}
+
+@Entity
+class Subscription{
+    @Id
+    int durationInMonths;
+    int price;
+
+    @ManyToOne
+    User user;
+
+    @OneToOne
+    Meal meal;
+}
+
+enum discountType{
+    FIXED,
+    PERCENTAGE,
+}
+
+@Entity
+class Discount{
+
+    @Id
+    Long id;
+    DiscountType discountType;
+    int amount;
+
+    @OneToOne
+    Meal meal;
+}
+
+@Entity
+class Order{
+    @Id
+    UUID id;
+    String mealType;
+    int mealPrice;
+    int discountAmount;
+    int totalPrice;
+    int subscriptionPeriod;
+    int noOfOneTimeOrders;
+    @ManyToOne
+    User user;
+
+    @OneToMany
+    List<OneTimeOrder> oneTimeOrderList;
+
+}
+
+@Entity
+class OneTimeOrder{
+    UUID id;
+    String mealType;
+    @ManyToOne
+    Order order;
+}
+
+Meal
+type  flavour price
+CHAPATHI ..    30
+RICE    ..     60
+
+Subscription
+durationInMonths  price
+1                   1500
+3                   4000
+6                   6000

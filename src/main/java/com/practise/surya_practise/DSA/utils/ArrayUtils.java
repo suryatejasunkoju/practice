@@ -3,6 +3,7 @@ package com.practise.surya_practise.DSA.utils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Slf4j
@@ -158,5 +159,12 @@ public class ArrayUtils
             log.info("{},", result.get(i));
         }
         log.info("]");
+    }
+
+    public static int[] createIntArr(int size, int defaultValue)
+    {
+        int[] arr = new int[size];
+        Arrays.fill(arr, defaultValue);
+        return arr;
     }
 }

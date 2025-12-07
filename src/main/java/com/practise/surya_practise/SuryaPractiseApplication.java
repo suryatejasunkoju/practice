@@ -14,7 +14,7 @@ public class SuryaPractiseApplication
 	{
 		SpringApplication.run(SuryaPractiseApplication.class, args);
 //		SolidPrinciplesClient.run();
-		DesignPatternsClient.run();
-//		DsaClient.run();
+//		DesignPatternsClient.run();
+		DsaClient.run();
 	}
 }

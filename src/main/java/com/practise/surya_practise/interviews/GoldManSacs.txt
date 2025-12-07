@@ -1,0 +1,4 @@
+L1:
+DSA:
+1.Trapping water
+2.find elements with frequency of more than 1

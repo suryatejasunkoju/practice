@@ -24,21 +24,22 @@ public class LargestRectangleInAHistogram implements DsaSolutionInterface {
             }
         }
         log.info("maxArea={}", maxArea);
-        return null;
+        return Pair.of("O(n^2)", "O(1)");
     }
 
     private int maxStretchArea(int i, int[] arr)
     {
-//        log.info("i={}, currElem={}", i, arr[i]);
-        int area=arr[i], left=i-1, right=i+1;
-        while(left>=0 && arr[left]>=arr[i])
+        log.info("maxStretchArea::i={}, currElem={}", i, arr[i]);
+        int curr = arr[i];
+        int area= curr, left=i-1, right=i+1;
+        while(left>=0 && arr[left]>= curr)
         {
-            area+=arr[i];
+            area+= curr;
             left--;
         }
-        while(right<arr.length-1 && arr[right]>=arr[i])
+        while(right<arr.length-1 && arr[right]>= curr)
         {
-            area+=arr[i];
+            area+= curr;
             right++;
         }
         return area;

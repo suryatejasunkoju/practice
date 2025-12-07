@@ -1,0 +1,36 @@
+How Java program works internally
+OOPS concepts
+Diff between overloading & overriding
+Diff between flatMap & hashMap
+Diff between Linked list & arraylist
+Diff between hashSet & hashMap
+Autoboxing & unboxing
+Diff comparable vs comparator
+Diff == vs equals
+What we use to collect data-Streams
+Whats the use of multiple threads
+What is exception handling & why we need it.
+What is Object class
+Null pointer exception
+
+
+Spring boot:-
+How to get beans from IOC container
+Diff btw Spring & Spring boot
+What does Actuators do
+
+
+Spring @Repository
+dependency injection-types
+@Component vs &Service
+@SpringBootApplication
+How request comes to controller & response flows. & its related annotations
+Bean life cycle
+
+
+
+Java:
+MarkerInterface in java
+Concurrent HashMap
+Copy arraylist
+diff-Final, finally, finalise

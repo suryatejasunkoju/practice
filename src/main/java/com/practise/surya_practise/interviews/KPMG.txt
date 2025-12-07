@@ -1,0 +1,159 @@
+coding test:
+1.We have an numbers array. leading element=if all nos right to it are smaller. Find all leading elements in array.
+2.We have an numbers array which contains 1's. Move all 1's to last(right side) of array.
+
+
+
+L1 round:
+public void Main{
+psvm(String args[]){
+int n=10;
+rec(n)
+}
+}
+
+public void rec(int n){
+if(n==0){
+	return;
+}
+SOP(n);
+return rec(n-1);
+}
+
+java8 feature
+find even and double the value by using java-8 features
+ip : 1, 2, 3, 4, 5, 6, 7, 8;
+op : 4, 8, 12, 16
+
+numList.stream()
+.filter(
+x->x%2==0
+)
+.map(
+x->x*2
+)
+.Collectors()
+================
+public class Main {
+
+    public static void DoPrint(Base o) {
+
+        o.print();
+
+    }
+
+    public static void main(String[] args) {
+
+        Base x = new Base();
+
+        Base y = new Derived();
+
+        Derived z = new Derived();
+
+        DoPrint(x);
+
+        DoPrint(y);
+
+        DoPrint(z);
+
+    }
+
+}
+
+class Base {
+
+    public void print() {
+
+        System.out.println("Base");
+
+    }
+
+}
+
+class Derived extends Base {
+
+    public void print() {
+
+        System.out.println("Derived");
+
+    }
+
+}
+hashmap internal impl:
+k1->el1, el2
+
+hashCode=hashFunction(key)
+
+key1, value1
+key2, value2
+key3, value3
+
+collision resolution techniques
+hashset time complexities
+
+DSA questions:
+move 1's to last in arr[]
+find all great elements of int[] where great element is the one which is greater than all the elements on its right.
+
+To be learnt:
+java core concepts & internal working, sets, hashmaps, trees, problem solving, DSA: dp,sliding window.
+------------------------------------------------------------------------------------------------------------
+L2 round:
+Introduce yourself
+What's your role in company
+
+Difference between put and patch API
+Difference between horizontal scaling and vertical scaling.
+What's the Java version being used in your company
+Difference between map and flatmap
+No spring boot at all, only Java, sql
+Asked some LLD Concept
+How to make a singleton class
+How to create custom Exception in Java
+Can we write try without catch
+java fundamentals, core java
+factory pattern
+difference btw primary key & unique key
+bean scopes
+How to implement API security
+Java Design patterns
+immutable class
+
+In
+class A
+{
+    void m1() throws IOException
+    {
+        System.out.println("In m1 A");
+    }
+}
+
+class B extends A
+
+{
+    void m1() throws Exception
+    {
+        System.out.println("In m1 B");
+    }
+}
+
+public class Test {
+
+    public static void main(String[] args) {
+        A a=new B();
+        try {
+            a.m1();
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+    }
+
+}
+will this code compile & run?
+ans:wont compile & wont run
+
+Sql.
+In employees table, how to find employees whose name starts with s.
+Difference between unique key and primary key
+Difference between Drop and truncate in table
