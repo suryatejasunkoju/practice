@@ -47,3 +47,48 @@ What is CTE
 
 Explain SOLID principles
 What are the difficulties that u faced while splitting monolithic to microservices architecture
+
+
+
+
+Scenario based questions
+Same entity name for 2 same entities, how will spring boot differentiate both
+Based on fully qualified name(root to that class) 
+
+@Transactional
+Biconsumer
+Consumer
+
+
+
+DSA 
+Reverse words within a string in which words are separated by spaces.
+
+We are given 2 arrays of same size. We form a part for each element of first array with each element of second array. Out of all these pairs, remove duplicate pairs and return those pairs
+
+
+
+
+API security
+RBAC
+Certain APIs with ant matchers, authorise()
+@preAuthorize(role_name) 
+JWT token for ever APIs
+
+
+Caching strategies
+ControllerAdvice
+RestControllerAdvice
+
+Why we have abstract single method in Functional interface, what is it's purpose. Why can't we have multiple abstract methods in interface
+
+
+
+Git
+Difference between rebase and merge
+You have a branch and you made a commit. And pushed to remote branch. Now you realised that that's a wrong commit. What will you do then
+
+
+
+
+
