@@ -1,0 +1,3 @@
+what is the annotation used when we want a class to be embedded into another model like class auditable{ createdAt, updatedAt}
+given a List<Integer> how to do 
+priority queue dsa question

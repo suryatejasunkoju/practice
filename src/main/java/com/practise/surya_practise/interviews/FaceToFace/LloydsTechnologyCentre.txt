@@ -1,0 +1,15 @@
+role is for 4 to 6 years of experience:-
+
+
+for 4 years of experience:
+class Student{
+    id, name, salary
+}
+write code for forming below when given a List<Student>
+1.Map<salary, count>
+2.Map<name, salary> where map is ordered by desc of salary 
+3.Application is slow, what will u do to make it fast?
+
+for 6 years of experience:
+4.Given a string find whether its a palindrome or not
+5.diving deep into implementation of projects that we have worked on

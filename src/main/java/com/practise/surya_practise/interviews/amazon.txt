@@ -1,0 +1,7 @@
+Shrithi basumata:
+mostly questions will be on dsa, system design(HLD, LLD) only
+mostly dsa questions will be on heaps, binary search, priority queues. 
+
+for SDE-1 role:
+base=16 to 24, variable(2L) + stocks(2 L) = 20 to 28 L
+will ask C or C++ questions deeply, as SDE-1 people will be selected directly from college
