@@ -1,4 +1,4 @@
-aws ai practioner course:
+aws ai practioner course:(In exam they will check - whether we know how to use AWS tools)
 
 section:1
 video:7
@@ -124,3 +124,26 @@ go to "security group"->"Edit inbound rules"->Add new rule with "Type as all tra
 to delete->select instance->click terminate option->delete security group created for this instance.
 
 video:A note on the costing aspect:
+In amazon aws documentation, we can see pricing for each service within that service sections.
+In "Billing & Cost Management" section we can see our bills. In "bills" section, we can see bills by service, by account etc.
+We can create a budget, (budget=we can set cost limits and we can get notifications if we reach those limits) in budgets section, we can use templates for budgets & add notification emails.
+
+video:Lab:Creating an Amazon SageMaker Domain:
+Search sageMaker:
+Amazon SageMaker(Older version)
+Amazon SageMaker AI(Newer version)-For this demo we are using this.
+SageMaker Studio(this is also for ML)
+Within "Amazon SageMaker AI", we have to set a domain(domain=top level logical container or workspace boundary that defines who can use, what resources are allowed to use, what settings to use, etc. With Domain, we can configure users, security, networking, storage, etc). Without domain, we can't use sagemaker canvas.
+
+create domain for single user
+will setup New IAM role with AmazonSageMakerFullAccess policy
+will cr eates  shared, Persistent EFS(Elastic File System) for Studio
+will create VPC(Virtual Private Cloud), in which all resources will run
+https://aws.amazon.com/sagemaker/ai/pricing/ -->In this page, on demand pricing means paid services
+
+sagemaker studio:
+used for working with data, set infrastructure, deploying ML models,
+
+
+
+When creating a user and assigning policies to that user, automatically aws added "IAMUserChangePassword" policy, which allows user to change his password by him/her-self.
